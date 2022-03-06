@@ -2,8 +2,8 @@
 require "./config/environment"
 
 sql = <<-eos
-  DROP TABLE
-    recipes
+    DROP TABLE
+        recipes
 eos
 
 DB.run(sql)

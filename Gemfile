@@ -10,14 +10,14 @@ gem 'dotenv'
 gem 'bcrypt'
 
 group :development do
-  gem 'sequel-annotate'
-  gem 'rubocop', require: false
-  gem 'rubocop-packaging', require: false
-  gem 'rubocop-performance', require: false
+    gem 'sequel-annotate'
+    gem 'rubocop', require: false
+    gem 'rubocop-packaging', require: false
+    gem 'rubocop-performance', require: false
 end
 
-group :development, :test do
-  gem 'pry'
-  gem 'rspec-roda'
-  gem 'faker'
+    group :development, :test do
+    gem 'pry'
+    gem 'rspec-roda'
+    gem 'faker'
 end

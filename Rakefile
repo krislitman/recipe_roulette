@@ -1,3 +1,3 @@
 task :app do
-  require './app'
+    require './app'
 end
