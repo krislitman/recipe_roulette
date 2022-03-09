@@ -5,7 +5,7 @@ require "csv"
 require "pry"
 
 recipes = DB[:recipes]
-file = "db/data/recipe_list_test.csv"
+file = "db/data/Recipe_List2.csv"
 csv_data = CSV.open(file, headers: true, header_converters: :symbol)
 csv_data.each do |row|
     data = Recipe.new(row)

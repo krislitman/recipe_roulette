@@ -11,7 +11,7 @@ sql = <<-eos
         cooking_time VARCHAR(100),
         ingredients VARCHAR NOT NULL,
         instructions VARCHAR NOT NULL,
-        author VARCHAR(100) NOT NULL
+        author VARCHAR(100)
     )
 eos
 
