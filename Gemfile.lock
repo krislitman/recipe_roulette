@@ -29,6 +29,7 @@ GEM
       rack (>= 1.1.0)
     rainbow (3.1.1)
     regexp_parser (2.2.1)
+    require_all (3.0.0)
     rexml (3.2.5)
     roda (3.53.0)
       rack
@@ -88,6 +89,7 @@ DEPENDENCIES
   rack
   rack-protection
   rack_csrf
+  require_all
   roda
   rspec-roda
   rubocop

@@ -8,6 +8,7 @@ gem 'rack_csrf'
 gem 'rack-protection'
 gem 'dotenv'
 gem 'bcrypt'
+gem 'require_all'
 
 group :development do
     gem 'sequel-annotate'

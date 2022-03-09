@@ -9,5 +9,12 @@ class App < Roda
 
             JSON.generate(response)
         end
+        r.on "show" do
+            response = {
+                recipe: {}
+            }
+
+            JSON.generate(response)
+        end
     end
 end
