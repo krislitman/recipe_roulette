@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "bundler"
 require "json"
 require "roda"
@@ -5,6 +7,7 @@ require "pg"
 require "sequel"
 require "csv"
 require "require_all"
+require "pry"
 
 # models
 require_all "./models"

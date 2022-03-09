@@ -9,12 +9,10 @@ class App < Roda
 
             JSON.generate(response)
         end
-        r.on "show" do
-            response = {
-                recipe: {}
-            }
+        r.on "random" do
+            recipe = RecipeController.find_random_recipe
 
-            JSON.generate(response)
+            JSON.generate(recipe)
         end
     end
 end
