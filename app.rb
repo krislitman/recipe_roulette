@@ -12,7 +12,7 @@ class App < Roda
         r.on "random" do
             recipe = RecipeController.find_random_recipe
 
-            JSON.generate(recipe)
+            JSON.generate(recipe.values)
         end
     end
 end

@@ -11,7 +11,7 @@ class RecipeController
                 LIMIT
                     1
             eos
-            Recipe.with_sql(sql).all
+            Recipe.with_sql(sql).first
         end
     end
 end
