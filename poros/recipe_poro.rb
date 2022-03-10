@@ -1,4 +1,4 @@
-class Recipe
+class RecipePoro
     attr_reader :name,
                 :serves,
                 :prep_time,

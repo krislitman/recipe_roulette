@@ -8,7 +8,7 @@ recipes = DB[:recipes]
 file = "db/data/Recipe_List2.csv"
 csv_data = CSV.open(file, headers: true, header_converters: :symbol)
 csv_data.each do |row|
-    data = Recipe.new(row)
+    data = RecipePoro.new(row)
     recipes.insert(
         name: data.name,
         serves: data.serves,
