@@ -9,8 +9,8 @@ require "csv"
 require "require_all"
 require "pry"
 
-# models
-require_all "./models"
+# poros
+require_all "./poros"
 
 # controllers
 require_all "./controllers"
