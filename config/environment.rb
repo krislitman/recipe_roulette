@@ -20,5 +20,3 @@ require_all "./models"
 
 # controllers
 require_all "./controllers"
-
-# DB = Sequel.postgres("recipe_roulette_#{db_env}", user: "", password: "", host: "localhost")
