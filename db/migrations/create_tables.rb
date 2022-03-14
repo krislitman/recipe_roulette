@@ -1,5 +1,5 @@
 # Create Tables
-require "./config/environment"
+require_relative "../db_helper"
 
 sql = <<-eos
     DROP TABLE IF EXISTS categories;
