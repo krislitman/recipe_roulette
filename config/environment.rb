@@ -16,7 +16,7 @@ DB = Sequel.connect("postgres://localhost/recipe_roulette_#{db_env}")
 require_all "./poros"
 
 # models
-require_all "./models"
+# require_all "./models"
 
 # controllers
 require_all "./controllers"
