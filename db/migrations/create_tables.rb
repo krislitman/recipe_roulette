@@ -2,8 +2,8 @@
 require "./config/environment"
 
 sql = <<-eos
-    DROP TABLE IF EXISTS recipes;
     DROP TABLE IF EXISTS categories;
+    DROP TABLE IF EXISTS recipes;
 
     CREATE TABLE
         recipes
