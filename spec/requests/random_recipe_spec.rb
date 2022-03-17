@@ -3,7 +3,7 @@ require "spec_helper.rb"
 RSpec.describe App, roda: :app do
     describe "A random Recipe can be found" do
         it "/random" do
-            r = get "/random"
+            r = get "/api/v1/random"
             response = JSON.parse(r.body, symbolize_names: true)
 
             expect(r.status).to eq(200)
