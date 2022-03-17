@@ -2,7 +2,7 @@ require "spec_helper.rb"
 
 RSpec.describe App, roda: :app do
     it "/index" do
-        index = get "/index"
+        index = get "/api/v1/index"
         response = JSON.parse(index.body, symbolize_names: true)
 
         expect(index.status).to eq(200)
