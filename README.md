@@ -2,7 +2,7 @@
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 
-**Find a new recipe, filter by categories, meal prep options!**
+**Find new recipes, filter by categories, meal prep options!**
 
 ## Table of Contents
 
@@ -12,7 +12,6 @@
   - [Runing the tests](#running-the-tests)
   - [Built With](#built-with)
   - [Versioning](#versions)
-  - [Acknowledgements](#acknowledgements)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 
@@ -85,5 +84,3 @@ To run individual tests use:
 - Ruby 3.0.0
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
-
-## Acknowledgements
