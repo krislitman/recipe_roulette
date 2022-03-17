@@ -10,7 +10,7 @@ RSpec.describe Category, type: :model do
 
         after(:all) do
             DB[:recipes].where(category_id: @category.category_id).delete
-            @dataset.where(name: "Breakfast").delete
+            @dataset.where(category_id: @category.category_id).delete
         end
 
         it "Exists" do
