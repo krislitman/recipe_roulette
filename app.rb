@@ -11,9 +11,16 @@ class App < Roda
 
                     JSON.generate(response)
                 end
-                r.on "random" do
+                r.get "random" do
                     limit = r.params[:limit] || 1
-                    recipe = RecipeController.find_random_recipe(limit)
+                    recipe = RecipeController.find_random_recipe(limit, nil)
+
+                    JSON.generate(recipe.values)
+                end
+                r.get "random", Integer do |category_id|
+                    limit = r.params[:limit] || 1
+                    category_id ||= nil
+                    recipe = RecipeController.find_random_recipe(limit, category_id)
 
                     JSON.generate(recipe.values)
                 end
