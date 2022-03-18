@@ -15,7 +15,7 @@ class App < Roda
                     limit = r.params[:limit] || 1
                     recipe = RecipeController.find_random_recipe(limit, nil)
 
-                    JSON.generate(recipe.values)
+                    JSON.pretty_generate(recipe.values)
                 end
                 r.get "random", Integer do |category_id|
                     limit = r.params[:limit] || 1

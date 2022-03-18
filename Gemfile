@@ -9,6 +9,7 @@ gem 'rack-protection'
 gem 'dotenv'
 gem 'bcrypt'
 gem 'require_all'
+gem 'jsonapi-serializer'
 
 group :development do
     gem 'sequel-annotate'
