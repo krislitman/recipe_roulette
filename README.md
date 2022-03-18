@@ -47,6 +47,7 @@ Example Response:
 ```
 {
     "data": {
+        "recipe_id": 5,
         "category_id": null,
         "name": "Creamy Shrimp And Linguine",
         "serves": "4-5",
@@ -66,6 +67,7 @@ Example Response:
 ```
 {
     "data": {
+        "recipe_id": 6,
         "category_id": 59,
         "name": "Chippy Taco Marinade",
         "serves": "~",
