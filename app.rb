@@ -15,14 +15,14 @@ class App < Roda
                     limit = r.params[:limit] || 1
                     recipe = RecipeController.find_random_recipe(limit, nil)
 
-                    JSON.pretty_generate(recipe.values)
+                    JSON.generate(RecipeSerializer.new(recipe))
                 end
                 r.get "random", Integer do |category_id|
                     limit = r.params[:limit] || 1
                     category_id ||= nil
                     recipe = RecipeController.find_random_recipe(limit, category_id)
 
-                    JSON.generate(recipe.values)
+                    JSON.generate(RecipeSerializer.new(recipe))
                 end
             end
         end
