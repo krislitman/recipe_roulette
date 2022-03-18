@@ -62,10 +62,20 @@ RSpec.describe App, roda: :app do
         it "Can find a random breakfast recipe given the breakfast category id" do
             r = get "/api/v1/random/#{@breakfast.category_id}"
             response = JSON.parse(r.body, symbolize_names: true)
+            require 'pry'; binding.pry
 
             expect(r.status).to eq(200)
             expect(r.body).to be_a(String)
             expect(response).to be_a(Hash)
+            expect(response.keys).to include(:recipe_id)
+            expect(response.keys).to include(:category_id)
+            expect(response.keys).to include(:name)
+            expect(response.keys).to include(:serves)
+            expect(response.keys).to include(:prep_time)
+            expect(response.keys).to include(:cooking_time)
+            expect(response.keys).to include(:ingredients)
+            expect(response.keys).to include(:instructions)
+            expect(response.keys).to include(:author)
         end
     end
 end
