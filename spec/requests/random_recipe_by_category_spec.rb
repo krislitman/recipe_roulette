@@ -75,6 +75,21 @@ RSpec.describe App, roda: :app do
             expect(response.keys).to include(:ingredients)
             expect(response.keys).to include(:instructions)
             expect(response.keys).to include(:author)
+            expect(response[:category_id]).to eq(@breakfast.category_id)
+        end
+
+        it "Can find a random lunch recipe with category" do
+            r = get "/api/v1/random/#{@lunch.category_id}"
+            response = JSON.parse(r.body, symbolize_names: true)
+
+            expect(response[:category_id]).to eq(@lunch.category_id)
+        end
+
+        it "Can find a random dinner recipe with category" do
+            r = get "/api/v1/random/#{@dinner.category_id}"
+            response = JSON.parse(r.body, symbolize_names: true)
+
+            expect(response[:category_id]).to eq(@dinner.category_id)
         end
     end
 end
