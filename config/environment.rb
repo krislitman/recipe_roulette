@@ -21,3 +21,5 @@ require_all "./models"
 # controllers
 require_all "./controllers"
 
+# serializers
+require_all "./serializers"
