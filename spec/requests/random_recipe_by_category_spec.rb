@@ -66,30 +66,30 @@ RSpec.describe App, roda: :app do
             expect(r.status).to eq(200)
             expect(r.body).to be_a(String)
             expect(response).to be_a(Hash)
-            expect(response.keys).to include(:recipe_id)
-            expect(response.keys).to include(:category_id)
-            expect(response.keys).to include(:name)
-            expect(response.keys).to include(:serves)
-            expect(response.keys).to include(:prep_time)
-            expect(response.keys).to include(:cooking_time)
-            expect(response.keys).to include(:ingredients)
-            expect(response.keys).to include(:instructions)
-            expect(response.keys).to include(:author)
-            expect(response[:category_id]).to eq(@breakfast.category_id)
+            expect(response.dig(:data).keys).to include(:recipe_id)
+            expect(response.dig(:data).keys).to include(:category_id)
+            expect(response.dig(:data).keys).to include(:name)
+            expect(response.dig(:data).keys).to include(:serves)
+            expect(response.dig(:data).keys).to include(:prep_time)
+            expect(response.dig(:data).keys).to include(:cooking_time)
+            expect(response.dig(:data).keys).to include(:ingredients)
+            expect(response.dig(:data).keys).to include(:instructions)
+            expect(response.dig(:data).keys).to include(:author)
+            expect(response.dig(:data, :category_id)).to eq(@breakfast.category_id)
         end
 
         it "Can find a random lunch recipe with category" do
             r = get "/api/v1/random/#{@lunch.category_id}"
             response = JSON.parse(r.body, symbolize_names: true)
 
-            expect(response[:category_id]).to eq(@lunch.category_id)
+            expect(response.dig(:data, :category_id)).to eq(@lunch.category_id)
         end
 
         it "Can find a random dinner recipe with category" do
             r = get "/api/v1/random/#{@dinner.category_id}"
             response = JSON.parse(r.body, symbolize_names: true)
 
-            expect(response[:category_id]).to eq(@dinner.category_id)
+            expect(response.dig(:data, :category_id)).to eq(@dinner.category_id)
         end
     end
 end
