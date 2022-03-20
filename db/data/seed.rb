@@ -25,7 +25,7 @@ csv_data.each do |row|
         ingredients: row[:ingredients],
         instructions: row[:instructions],
         author: row[:author],
-        category_id: row[:category_id]
+        category_id: row[:categoryid]
     )
 end
 
