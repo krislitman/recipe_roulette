@@ -11,7 +11,8 @@ class App < Roda
                     RecipeController.random(r.params[:limit], category_id)
                 end
                 r.get "category_recipes", Integer do |category_id|
-                    CategoryController.index(r.params[:limit], category_id)
+                    require 'pry'; binding.pry
+                    RecipeController.index(r.params[:limit], category_id)
                 end
             end
         end
