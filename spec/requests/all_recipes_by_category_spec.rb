@@ -60,6 +60,12 @@ RSpec.describe App, roda: :app do
         end
 
         it "Can find all breakfast recipes" do
+            r = get "/api/v1/#{@breakfast.category_id}/index"
+            response = JSON.parse(r.body, symbolize_names: true)
+
+            expect(r.status).to eq(200)
+            expect(r.body).to be_a(String)
+            expect(response).to be_a(Hash)
         end
     end
 end
