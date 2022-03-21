@@ -10,6 +10,9 @@ class App < Roda
                 r.get "random", Integer do |category_id|
                     RecipeController.random(r.params[:limit], category_id)
                 end
+                r.get "category_recipes", Integer do |category_id|
+                    RecipeController.index(r.params[:limit], category_id)
+                end
             end
         end
     end
