@@ -66,6 +66,8 @@ RSpec.describe App, roda: :app do
             expect(r.status).to eq(200)
             expect(r.body).to be_a(String)
             expect(response).to be_a(Hash)
+            expect(response.dig(:data).length).to eq(10)
+            expect(response.dig(:data).first.dig(:category_id)).to eq(@breakfast.category_id)
         end
     end
 end
