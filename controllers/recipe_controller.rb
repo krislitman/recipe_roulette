@@ -7,8 +7,7 @@ class RecipeController
 
     def self.index(limit, category_id)
         limit ||= 50
-        require 'pry'; binding.pry
-        recipes = Recipe.get_random_recipe(limit, category_id) || ErrorMessage.missing(:recipe)
-        JSON.generate(RecipeSerializer.new(recipes))
+        recipes = Recipe.where(category_id: category_id).limit(limit).all || ErrorMessage.missing(:recipe)
+        JSON.generate(RecipeSerializer.new(recipes, is_collection: true))
     end
 end
