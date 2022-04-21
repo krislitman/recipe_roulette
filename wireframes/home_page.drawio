@@ -1,0 +1,22 @@
+<mxfile host="65bd71144e">
+    <diagram id="xPSwYoCb8B9HQhp7pw07" name="Page-1">
+        <mxGraphModel dx="1135" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="As a visitor, I see an option to click on &quot;Get&lt;br&gt;&amp;nbsp;me a random Recipe!&quot; and a roulette wheel" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="375" y="30" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="90" width="430" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Get me a random Recipe!" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="315" y="310" width="220" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Recipe Roulette" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="180" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -37,6 +37,11 @@ your local machine for development and testing purposes.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 
+-- Filter by Serving (How many people)
+-- Filter by Time
+-- Filter by Category
+-- Add in pictures from API
+
 ## Endpoints
 
 #### Random Recipe

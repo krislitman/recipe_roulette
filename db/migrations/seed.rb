@@ -14,7 +14,7 @@ category_data.each do |row|
 end
 
 recipes = DB[:recipes]
-file = "db/data/Recipe_List2.csv"
+file = "db/data/Recipe_List.csv"
 csv_data = CSV.open(file, headers: true, header_converters: :symbol)
 csv_data.each do |row|
     recipes.insert(
@@ -25,7 +25,7 @@ csv_data.each do |row|
         ingredients: row[:ingredients],
         instructions: row[:instructions],
         author: row[:author],
-        category_id: row[:categoryid]
+        category_id: row[:category_id]
     )
 end
 
